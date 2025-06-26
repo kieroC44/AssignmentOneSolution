@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Globalization;
 using System.Xml.Linq;
 
 namespace Demo
@@ -146,9 +147,43 @@ namespace Demo
 
             #endregion
 
-       
+            #region Fraction & Discard
+            //12.34563208329382903820
+            //float number = 12.345678910F;
+            //Console.WriteLine(number);
+            //float number2 = 10;
+            //Console.WriteLine(number2);
+
+            //decimal number = 123.4567m;
+            //Console.WriteLine(number);
+            //decimal number = 10;
+            //Console.WriteLine(number);
 
 
+            //float result = 3.0F / 2;
+            //Console.WriteLine(result);
+
+            //double number = 12.3456;
+            //Console.WriteLine(number);
+
+            //Discard , Digit seprator C# 7.0 Feature[]
+            //int number = 1000_000_000;
+            //Console.WriteLine(number);
+
+            //int. TryParse(Console. ReadLine(), out _);
+
+
+            //int number = 100000000;
+            //Console.WriteLine(number);
+            //Console.WriteLine($"{number:c}");
+
+            //CultureInfo cultureInfo = new CultureInfo("ar-SA");
+            //Console.WriteLine(number.ToString("c", cultureInfo);
+
+
+
+
+            #endregion
 
 
 
