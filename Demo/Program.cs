@@ -1,6 +1,8 @@
 ﻿using System.Drawing;
 using System.Globalization;
+using System.Runtime.InteropServices;
 using System.Xml.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Demo
 {
@@ -187,10 +189,72 @@ namespace Demo
 
 
 
+            #region Implicit and explicit casting
+
+            //Impilict casting [Safe casting]
+            //int x = 1000; //4 bytes
+            //long y; // 8 bytes
+            //y = x;//Safe
+            //Console.WriteLine(y);
+
+            //Explicit casting [Unsafe casting]
+            //long x = 100000000000000;
+            //int y = (int)x;
+            //Console.WriteLine(y);
+            //Arthmetic overflow
+
+            //checked
+            //{ 
+            //    long x = 100000000000;
+            //   int y = (int)x;
+            //    unchecked
+            //    {
+            //        Console.WriteLine(y);
+            //    }
+            //}
+
+
+            //long x = 1000;
+            //if (x > int.MaxValue || x < int.MinValue)
+            //{
+            //    Console.WriteLine("An exception happened");
+            //}
+            //else
+            //{
+            //    int y = (int)x;
+            //    Console.WriteLine(y);
+            //}
+
+
+            //object num = 12348888888888885;
+            //if (num.GetType() == typeof(int))
+            //{
+
+            //    int y = (int)num;
+            //    Console.WriteLine(y);
+            //}
+            //else
+            //{
+
+            //    Console.WriteLine("Number is large");
+            //}
 
 
 
+            #endregion
 
+            #region Ex 2 [int - float]
+            //Implicit int == > float
+            //int x = 10;
+            //float y = x; //implicit casting [safe]
+            //Console.WriteLine(y);
+
+            ////Explicit casting float == > int
+            //float x=12.55f;
+            //int y = (int) x;
+            //Console.WriteLine(y); //unsafe [loss of data]
+
+            #endregion
 
 
 
