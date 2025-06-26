@@ -258,6 +258,81 @@ namespace Demo
 
 
 
+
+            #region Casting [Convert - Parse- TryParse]
+            //Ex : Enter name , age , salary
+            //Console.WriteLine("Please enter your data");
+            //Console.WriteLine("Name");
+            //string name = Console.ReadLine();
+            //Console.WriteLine("Age");
+            //int age = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Salary");
+            //double salary = Convert.ToDouble(Console.ReadLine());
+            //Console.Clear();
+            //Console.Beep(100, 120);
+            //Console.WriteLine($"Name = {name}");
+            //Console.WriteLine($"Age = {age}");
+            //Console.WriteLine($"Salary = {salary}");
+
+
+            //Console.WriteLine("Please enter your data");
+            //Console.WriteLine("Name");
+            //string name = Console.ReadLine();
+            //Console.WriteLine("Age");
+            //int age = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Salary");
+            //double salary = Double. Parse(Console. ReadLine());
+            //Console.Clear();
+            //Console. WriteLine($"Name = {name}");
+            //Console.WriteLine($"Age = {age}");
+            //Console.WriteLine($"Salary = {salary}"
+
+
+            //Console.WriteLine("Please enter your data");
+            //Console.WriteLine("Name");
+            //string name = Console.ReadLine();
+            //Console.WriteLine("Age");
+            //int age;
+            //bool isAgeParsed = int.TryParse(Console.ReadLine(), out age);
+            //Console.WriteLine("Salary");
+            //bool isSalaryParsed = Double.TryParse(Console.ReadLine(), out double salary);
+            //Console.Clear();
+            //Console.WriteLine($"Name = {name}");
+            //Console.WriteLine($"isAgeParsed = {isAgeParsed}");
+            //Console.WriteLine($"Age = {age}");
+            //Console.WriteLine($"isSalaryParsed = {isSalaryParsed}");
+            //Console.WriteLine($"Salary = {salary}");
+
+            //Class member method , Object member method
+
+
+            #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
