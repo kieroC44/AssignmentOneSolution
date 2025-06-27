@@ -196,6 +196,7 @@
              * int d; 
              * d = Convert.ToInt32( !(30 < 20) );
              */
+            //f)A value 1 will be assigned to d.
             #endregion
 
             #region 13-	Which of the following is the correct output for the C# code given below?
