@@ -128,14 +128,18 @@
             #endregion
 
             #region 6-	 Write C# program that Assigning one reference type variable to another and modifying the object through one variable and mention what will happen
-            int[] a = { 1, 2, 3 };
-            int[] b = a;
-            b[0] = 10;
-            Console.WriteLine($"a[0] = {a[0]}, b[0] = {b[0]}");
-            
+            //int[] a = { 1, 2, 3 };
+            //int[] b = a;
+            //b[0] = 10;
+            //Console.WriteLine($"a[0] = {a[0]}, b[0] = {b[0]}");
+
             #endregion
 
             #region 7-	Write C# program that take two string variables and print them as one variable 
+            string x = "Welcome";
+            string y = "To Ass_1";
+            string result = x + " " + y;
+            Console.WriteLine(result);
 
             #endregion
 
