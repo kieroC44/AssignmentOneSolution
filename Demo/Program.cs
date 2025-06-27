@@ -422,24 +422,24 @@ namespace Demo
             #region Logical Operators
             //Short circuit
 
-            bool A = true, B = false;
-            // Logical NOT
-            Console.WriteLine("IA: " + (!A));         // !true == > false
-            Console.WriteLine("!B: " + (!B));            // !false == > true
+            //bool A = true, B = false;
+            //// Logical NOT
+            //Console.WriteLine("IA: " + (!A));         // !true == > false
+            //Console.WriteLine("!B: " + (!B));            // !false == > true
 
-            // Logical AND && [Short Circuit]
-            // true && true == > true
-            // true && false == > false
-            // false && true == > false
-            // false && false == > false
-            Console.WriteLine("B && A: " + (B && A)); // false && true === > false
+            //// Logical AND && [Short Circuit]
+            //// true && true == > true
+            //// true && false == > false
+            //// false && true == > false
+            //// false && false == > false
+            //Console.WriteLine("B && A: " + (B && A)); // false && true === > false
 
-            // Logical OR || [Short Circuit]
-            // true | | true == > true
-            // true | | false == > true
-            // false || true == > true
-            // false || false == > false
-            //Console.WriteLine("A | | B: " + (A || B)); // true | | false == > true
+            //// Logical OR || [Short Circuit]
+            //// true | | true == > true
+            //// true | | false == > true
+            //// false || true == > true
+            //// false || false == > false
+            ////Console.WriteLine("A | | B: " + (A || B)); // true | | false == > true
 
 
             #endregion
@@ -493,6 +493,63 @@ namespace Demo
             //result = (a > b) ? "a is greater" : (b a) ? "b is greater" : "a equals b"; 
             //Console.WriteLine(result); // b is greater
             #endregion
+
+            #region String formating
+            //Equation : 10 + 5 = 15
+            //int x = 10, y = 5, result = x + y;
+
+            //String interpolation
+            //string msg = $"Equation : {x} + {y} = {result}";
+            //Console.WriteLine(msg);
+            //Console.WriteLine($"Equation : {x} + {y} = {result}");
+            //Console.WriteLine(15);
+            //Console.WriteLine(true); I
+
+            //Format function
+            //string msg = String.Format("Equation : {0} + {1} = {2}",
+            //Console.WriteLine(msg);
+
+            //Composite formatting
+            //Console.WriteLine("Equation : {0} + {1} = {2}", x,y, result);
+
+            //String Concatenation [+]
+            // int x = 10, y = 5, result = x + y;
+            // string msg = "Equation" +  ":" +  x + "+" + y + " = " + result;
+            //Console.WriteLine(msg);
+            //Equation
+            //Equation :
+            //Equation : 10
+            //Equation : 10 +
+            //Equation : 10 + 5
+            //Equation : 10 + 5 =
+            //Equation : 10 + 5 = 15
+
+            //Console.WriteLine("Equation :  " + x + " + " + y + " = " + result );
+
+            //D:\C44 -- Route\02 C#\Session 03\SessionThreeGroupTwoSolution\SessionThree
+            //string filePath = "D: \c44 -- Route\02 C#\Session 03\Session";
+            ////Console.WriteLine(filePath);
+
+            //string msg = "Mariam \t shindy";
+            //Console.WriteLine(msg);
+
+            //File path D:\c4u -- Route\2 C#\Session 02
+            #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
