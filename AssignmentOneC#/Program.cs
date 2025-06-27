@@ -144,15 +144,18 @@
             #endregion
 
             #region 8-	Write a program that calculates the simple interest given the principal amount, rate of interest, and time. The formula for simple interest is Interest = (principal * rate * time) / 100.
-            double principal = 10000, rate = 10, time = 3;
-            double interest = (principal * rate * time) / 100;
-            Console.WriteLine("Value Of Interest: " + interest);
+            //double principal = 10000, rate = 10, time = 3;
+            //double interest = (principal * rate * time) / 100;
+            //Console.WriteLine("Value Of Interest: " + interest);
 
 
             #endregion
 
             #region 9-	Write a program that calculates the Body Mass Index (BMI) given a person's weight in kilograms and height in meters. The formula for BMI is BMI = (Weight) / (Height * Height)
 
+            double weight = 60, height = 1.85;
+            double bmi = weight / (height * height);
+            Console.WriteLine("BMI Equal: " + bmi);
 
             #endregion
 
