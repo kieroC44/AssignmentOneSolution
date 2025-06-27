@@ -112,6 +112,9 @@
             #endregion
 
             #region 4-	Write C# program that Extract a substring from a given string.
+            string text = "Welcome For The First Assigenment";
+            string sub = text.Substring(15, 7);
+            Console.WriteLine("The Substring: " + sub);
 
             #endregion
 
