@@ -104,6 +104,10 @@
 
             #region 3 -    Write C# program that Perform a simple arithmetic operation with floating-point numbers And mention what will happen
 
+            float a = 5.7f, b = 2.3f;
+            float Value = a + b;
+            Console.WriteLine("Result: " + Value);
+            //No Error will occur, and the output will be the sum of the two floating-point numbers.
 
             #endregion
 
