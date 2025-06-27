@@ -1,5 +1,6 @@
 ﻿using System.Drawing;
 using System.Globalization;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -538,15 +539,68 @@ namespace Demo
 
 
 
+            #region Conditional statements
+            #region Example 1 [Quarter]
+            #region If else
+            Console.WriteLine("Please enter a month number");
+            int monthNo;
+            bool flag = int.TryParse(Console.ReadLine(), out monthNo);
+
+            switch (monthNo)
+            {
+                case 1:
+                    Console.WriteLine("January");
+                    break;
+                case 2:
+                    Console.WriteLine("February");
+                    break;
+                case 3:
+                    Console.WriteLine("March");
+                    break;
+                default:
+                    Console.WriteLine("Invalid");
+                    break;
+            }
 
 
 
 
+            //if (monthNo == 1)
+            //    Console.WriteLine("January");
+            //else if (monthNo == 2)
+            //    Console.WriteLine("February");
+            //else if (monthNo == 3)
+            //    Console.WriteLine("March");
+            //else
+            //    Console.WriteLine("Invalid");
+
+
+            #endregion
+
+
+            #region Switch
+
+            //Jump [int, constant pattern]
+            //jump table / branch table [data structure] will be gene
+            //better in the performance
+            //must the case be unique
+            //will not create here because num of cases little
+            /*
+            JumpTable:
+            [o]->address of Action1
+            [1] -> address of Action2
+            [2]->address of Action3
+
+                */
 
 
 
+            #endregion
 
 
+
+            #endregion
+            #endregion
 
 
 
