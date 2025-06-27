@@ -311,25 +311,188 @@ namespace Demo
 
 
 
+            #region Unary Operators
+            //// Unary -- > works on one variable , one operand
+            //int X = 10;
+            //// 1] ++ ,,, x =x + 1 ,, x+= 1 ;
+            //[Prefix : Increment then print , Postfix : Print Then increment]
+            //Console.WriteLine("Initial Value: " + X); // 10
+            //Console.WriteLine("++X: " + ++X); // 11 [Prefix increment]
+            //Console.WriteLine("X++: " + X++); // 11 [Postfix increment]
+            //Console.WriteLine("Final Value: " + X); // 12
+
+            ////2] -- 
+            //[Prefix : Decrement then print , Postfix : Print Then decrement]
+            //int Y = 10; //Y = Y - 1 ,, Y -= 1 ;
+            //Console.WriteLine("Initial Value: " + Y); // 10
+            //Console.WriteLine(" -- Y: " + -- Y); //9 [Prefix decrement]
+            //Console.WriteLine("Y --: " + Y -- ); //9 [Postfix decrement]
+            //Console.WriteLine("Final Value: " + Y); // 8
+
+            #endregion
+
+            #region Binary / Arthmetic Operators
+            //Binary operators -- > between 2 operands / 2 variables
+            //int a = 10, b = 5;
+            //Console.WriteLine("Addition: " + (a + b));            // 10 + 5 = 15
+            //Console.WriteLine("Subtraction: " + (a - b));        //10 - 5 = 5
+            //Console.WriteLine("Multiplication: " + (a * b));    //10 * 5 = 50
+            //Console.WriteLine("Division: " + (a / b));         //10 / 5 = 2
+            //Console.WriteLine("Modulus: " + (a % 3));         // 10 % 3 = 1
+
+            #endregion
+
+
+            #region Assignment Operators
+            // int a = 10;
+
+            // // 1. Simple Assignment
+            // a = 10;
+            // Console.WriteLine("Simple Assignment: " + a); // 10
+
+            // // 2. Add and Assign [a = a + 5]
+            // a += 5;
+            // Console.WriteLine("Add and Assign (a += 5): " + a); // 15
+
+            // // 3. Subtract and Assign [a = a -3]
+            // a -= 3;
+            // Console.WriteLine("Subtract and Assign (a -= 3): " + a); // 12
+
+            // // 4. Multiply and Assign [a = a * 2]
+            // //a = a / 2;
+            // //a /= 2;
+            // a *= 2;
+            // Console.WriteLine("Multiply and Assign (a *= 2): " + a); // 24
+            //  // 5. Divide and Assign [a = a /2]
+            // //a = a / 2;
+            //// a /= 2;
+            // a /= 2;
+            // Console.WriteLine("Divide and Assign (a /= 2): " + a); // 12
+
+            // // 6. Modulus and Assign [a = a % 5] I
+            // //a *= 5;
+            // a %= 5;
+            // Console.WriteLine("Modulus and Assign (a %= 5): " + a); //
+            #endregion
+
+            #region Relational Operators [Comparison]
+            ////return bool [true , false]
+
+            //int a = 10, b = 5;
+
+            //// Equal to ( == )
+            //Console.WriteLine("a == b: " + (a == b)); // false
+
+            //// Not equal to ( != )
+            //Console.WriteLine("a != b: " + (a != b)); // true
+
+            //// Greater than (>)
+            //Console.WriteLine("a > b: " + (a > b)); // true
+
+            //// Less than (<)
+            //Console.WriteLine("a < b: " + (a < b)); // f
+            //                                        // Greater than or equal to (>=)
+            //Console.WriteLine("a >= b: " + (a >= 'b')); // true
+
+            ////// Less than or equal to ( <= )
+            //Console.WriteLine("a <= b: " + (a <= b)); // false
+            //#endregion
+
+
+            //#region Logical Operators
+            ////Short circuit
+
+            //bool A = true, B = false;
+            //// Logical NOT
+            //Console.WriteLine("IA: " + (!A));
+            //Console.WriteLine("!B: " + (!B));
+
+            //// Logical AND && [Short Circuit]
+            //// true && true == > true
+            //// true && false == > false
+            //// false && true == > false
+            //// false && false == > false
+            //Console.WriteLine("B && A: " + (B && A)); // false && true === > false//// !true == > false//// !false == > true
 
 
 
 
+            #endregion
+
+            #region Logical Operators
+            //Short circuit
+
+            bool A = true, B = false;
+            // Logical NOT
+            Console.WriteLine("IA: " + (!A));         // !true == > false
+            Console.WriteLine("!B: " + (!B));            // !false == > true
+
+            // Logical AND && [Short Circuit]
+            // true && true == > true
+            // true && false == > false
+            // false && true == > false
+            // false && false == > false
+            Console.WriteLine("B && A: " + (B && A)); // false && true === > false
+
+            // Logical OR || [Short Circuit]
+            // true | | true == > true
+            // true | | false == > true
+            // false || true == > true
+            // false || false == > false
+            //Console.WriteLine("A | | B: " + (A || B)); // true | | false == > true
 
 
+            #endregion
 
+            #region Bitwise Operators
 
+            //int a = 5; // Binary -- > 0101
+            //int b = 3; // Binary -- > 0011
 
+            //// Bitwise AND &
+            //// true & true == > true
+            //// true & false == > false
+            //// false & false == > false
+            //// false & true == > false
+            //Console.WriteLine("a & b: " + (a & b)); // 1 -- > 0001
 
+            //// Bitwise OR |
+            //// true | true == > true
+            //// true | false == > true
+            //// false | true == > true
+            //// false | false == > false
+            //Console.WriteLine("a | b: " + (a | b)); // 7 -- > 0111
+            //                                        //// Bitwise XOR ^
+            ///// 1 ^ 0 == > 1
+            ///// 0 ^0 == >0
+            ///// 1 ^1 == > 0
+            ////Console.WriteLine("a ^ b: " + (a ^ b)); // 6 -- > 0110
 
+            ////// Bitmise NOT
+            ////Console.WriteLine(""a: " + (~a)); // -6 ( 2's complement of 5 -- > 1010)
 
+            ////// Left Shift
+            ////Console.WriteLine("a << 1: " + (a << 1)); // 10 -- > 1010
 
+            ////// Right Shift
+            ////Console.WriteLine("a >> 1: " + (a>>1)); // 2 -- > 0010
+            #endregion
 
+            #region Ternary Operators
+            //int a = 10, b = 20;
+            //string result;
+            //// Example : Simple Comparison
+            //if (a > b)
+            //result = "a is greater";
+            //else if (b > a)
+            //result = "b is greater";
+            //else
+            //result = "a equals b";
 
-
-
-
-
+            //result = (a > b) ? "a is greater" : "b is greater"; 
+            //result = (a > b) ? "a is greater" : (b a) ? "b is greater" : "a equals b"; 
+            //Console.WriteLine(result); // b is greater
+            #endregion
 
 
 
