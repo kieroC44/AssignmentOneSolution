@@ -136,14 +136,17 @@
             #endregion
 
             #region 7-	Write C# program that take two string variables and print them as one variable 
-            string x = "Welcome";
-            string y = "To Ass_1";
-            string result = x + " " + y;
-            Console.WriteLine(result);
+            //string x = "Welcome";
+            //string y = "To Ass_1";
+            //string result = x + " " + y;
+            //Console.WriteLine(result);
 
             #endregion
 
             #region 8-	Write a program that calculates the simple interest given the principal amount, rate of interest, and time. The formula for simple interest is Interest = (principal * rate * time) / 100.
+            double principal = 10000, rate = 10, time = 3;
+            double interest = (principal * rate * time) / 100;
+            Console.WriteLine("Value Of Interest: " + interest);
 
 
             #endregion
