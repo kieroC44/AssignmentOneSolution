@@ -55,18 +55,50 @@
             #region 1-	Write a program that allows the user to enter a number then print it.
 
 
-           
-            
-                int number;
-                Console.Write("Enter a number: ");
-                number = int.Parse(Console.ReadLine());
-                Console.WriteLine("The number you entered is: " + number);
-            
+
+
+            //int number;
+            //Console.Write("Enter a number: ");
+            //number = int.Parse(Console.ReadLine());
+            //Console.WriteLine("The number you entered is: " + number);
+
 
 
             #endregion
 
             #region 2-	Write C# program that converts a string to an integer, but the string contains non-numeric characters. And mention what will happen 
+
+
+
+
+            //Console.Write("Enter a Value: ");
+            //string x = (Console.ReadLine());
+            //try
+            //{
+            //    int result = int.Parse(x);
+            //    Console.WriteLine(result);
+            //}
+            //catch (FormatException)
+            //{
+            //    Console.WriteLine("Cannot convert string with non-numeric characters to integer.");
+            //}
+
+
+            //A FormatException will be thrown at runtime because the string contains non-numeric characters, and int.Parse can only convert fully numeric strings.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             #endregion
 
