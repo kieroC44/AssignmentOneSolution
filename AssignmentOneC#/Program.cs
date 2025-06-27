@@ -104,22 +104,27 @@
 
             #region 3 -    Write C# program that Perform a simple arithmetic operation with floating-point numbers And mention what will happen
 
-            float a = 5.7f, b = 2.3f;
-            float Value = a + b;
-            Console.WriteLine("Result: " + Value);
-            //No Error will occur, and the output will be the sum of the two floating-point numbers.
+            //float a = 5.7f, b = 2.3f;
+            //float Value = a + b;
+            //Console.WriteLine("Result: " + Value);
+            ////No Error will occur, and the output will be the sum of the two floating-point numbers.
 
             #endregion
 
             #region 4-	Write C# program that Extract a substring from a given string.
-            string text = "Welcome For The First Assigenment";
-            string sub = text.Substring(15, 7);
-            Console.WriteLine("The Substring: " + sub);
+            //string text = "Welcome For The First Assigenment";
+            //string sub = text.Substring(15, 7);
+            //Console.WriteLine("The Substring: " + sub);
 
             #endregion
 
             #region 5-     Write C# program that Assigning one value type variable to another and modifying the value of one variable and mention what will happen
-
+            int x = 5;
+            int y = x;
+            y = 10;
+            Console.WriteLine($"x = {x}, y = {y}");
+            //The output will be "x = 5, y = 10".
+           // modifying 'y' does not affect 'x'.
             #endregion
 
             #region 6-	 Write C# program that Assigning one reference type variable to another and modifying the object through one variable and mention what will happen
