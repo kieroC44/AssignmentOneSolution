@@ -119,16 +119,20 @@
             #endregion
 
             #region 5-     Write C# program that Assigning one value type variable to another and modifying the value of one variable and mention what will happen
-            int x = 5;
-            int y = x;
-            y = 10;
-            Console.WriteLine($"x = {x}, y = {y}");
-            //The output will be "x = 5, y = 10".
-           // modifying 'y' does not affect 'x'.
+            // int x = 5;
+            // int y = x;
+            // y = 10;
+            // Console.WriteLine($"x = {x}, y = {y}");
+            // //The output will be "x = 5, y = 10".
+            //// modifying 'y' does not affect 'x'.
             #endregion
 
             #region 6-	 Write C# program that Assigning one reference type variable to another and modifying the object through one variable and mention what will happen
-
+            int[] a = { 1, 2, 3 };
+            int[] b = a;
+            b[0] = 10;
+            Console.WriteLine($"a[0] = {a[0]}, b[0] = {b[0]}");
+            
             #endregion
 
             #region 7-	Write C# program that take two string variables and print them as one variable 
