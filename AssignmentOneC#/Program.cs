@@ -153,9 +153,9 @@
 
             #region 9-	Write a program that calculates the Body Mass Index (BMI) given a person's weight in kilograms and height in meters. The formula for BMI is BMI = (Weight) / (Height * Height)
 
-            double weight = 60, height = 1.85;
-            double bmi = weight / (height * height);
-            Console.WriteLine("BMI Equal: " + bmi);
+            //double weight = 60, height = 1.85;
+            //double bmi = weight / (height * height);
+            //Console.WriteLine("BMI Equal: " + bmi);
 
             #endregion
 
@@ -164,6 +164,18 @@
             //Today’s date : 20 , 11 , 2001
             //Today's date : 20 / 11 / 2001
             //Today's date : 20 – 11 – 2001
+            //int day, month, year;
+            //Console.Write("Enter day: ");
+            //day = int.Parse(Console.ReadLine());
+            //Console.Write("Enter month: ");
+            //month = int.Parse(Console.ReadLine());
+            //Console.Write("Enter year: ");
+            //year = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine($"Today's date: {day} , {month} , {year}");
+            //Console.WriteLine($"Today's date: {day} – {month} – {year}");
+            //Console.WriteLine($"Today's date: {day} / {month} / {year}");
+
 
 
             #endregion
